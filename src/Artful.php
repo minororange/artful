@@ -61,7 +61,9 @@ class Artful
     }
 
     /**
-     * @return mixed
+     * @template T
+     * @param class-string<T> $service
+     * @return T
      *
      * @throws ContainerException
      * @throws ServiceNotFoundException
@@ -144,6 +146,10 @@ class Artful
     }
 
     /**
+     * @template T
+     * @param class-string<T> $service
+     * @return T
+     *
      * @throws ServiceNotFoundException
      * @throws ContainerException
      */
